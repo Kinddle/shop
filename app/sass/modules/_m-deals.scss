@@ -1,0 +1,116 @@
+.m-deals {
+	margin-top: -820px;
+	@include media(min-width 320px max-width 767px, 4) {
+		margin-top: 0;
+	}
+	@include outer-container;
+	background-color: $bgContainer;
+	@include media(min-width 320px max-width 767px, 4) {
+		background-color: $white;
+	}
+	h2 {
+		color: $blackText;
+		text-align: right;
+		font-weight: 300;
+		@include media(min-width 320px max-width 767px, 4) {
+			font-size: 24px;
+			@include margin(25px 0);
+		}
+	}
+	.m-deals-list {
+		@include media(min-width 320px max-width 767px, 4) {
+				margin: 25px 0 0 0;
+			}
+		@include clearfix;
+		margin: 55px 0 0 0;
+		padding: 0;
+		.active {
+				background-color: $mDealsItemGrey;
+			}
+		.m-deals-item {
+			@include padding(16px);
+			@include margin(null null 57px null);
+			// @include span-columns(4);
+			// @include omega(3n);
+			width: 33.33%;
+			float: left;
+			list-style: none;
+			@include media(min-width 320px max-width 767px, 4) {
+				@include span-columns(6 of 12);
+				@include omega(2n);
+				@include omega-reset(3n);
+				border: none;
+				text-align: right;
+				margin-bottom: 0;
+				@include padding(10px);
+				&:last-child {
+					margin-right: 0; 
+				}
+			}
+			.m-deals-item-wrap {
+				float: right;
+				@include media(min-width 320px max-width 767px, 4) {
+					width: 100%;
+				}
+				img {
+					@include media(min-width 320px max-width 767px, 4) {
+					  	padding: 0;
+					  	margin-bottom: 10px;
+					}
+				}
+			}
+	       .m-deals-list-description-title {
+	        	color: $mDealsListTitleColor;
+	        	@include media( max-width 1399px, 6) {
+	        		font-size: 20px;
+                }
+	        }
+	        .m-deals-list-description {
+	        	@include inline-block;
+	        	text-align: right;
+	        	list-style: none;
+	        	@include padding(0);
+	        	@include media( max-width 1399px, 6) {
+                    float: right;
+                    margin: 0 0 10px 10px;
+                }
+	        	@include media(min-width 320px max-width 767px, 4) {
+				  	margin-left: 10px;
+				  	vertical-align: top;
+				}
+	        	#readOnly {
+	        		margin: 7px 0;
+	        	}
+	        	h4 {
+	        		@include media(min-width 320px max-width 767px, 4) {
+					  	font-size: 18px;
+					}
+	        	}
+	        	p { 
+	        		@include media( max-width 1399px, 6) {
+	        		font-size: 16px;
+                    }
+	        		@include media(min-width 320px max-width 767px, 4) {
+				  	    font-size: 14px;
+				  	}
+				  	span {
+				  		@include media(min-width 320px max-width 767px, 4) {
+				  	        font-size: 16px;
+				  	    }
+				  	}
+	        	}
+	        	.price {
+	        		font-size: 24px;
+	        		@include media( max-width 1399px, 6) {
+	        		font-size: 18px;
+                    }
+	        		@include media(min-width 320px max-width 767px, 4) {
+				  	        font-size: 16px;
+				  	        margin-bottom: 5px;
+				  	    }
+	        	}
+
+	        }
+		}
+	}
+}

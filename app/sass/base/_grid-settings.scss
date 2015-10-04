@@ -1,0 +1,24 @@
+
+$border-box-sizing: true;
+
+// Neat Overrides
+$fg-column: 95px;             // Column Width
+$gw-gutter: 0px;              // Gutter Width           
+$fg-max-columns: 12;          // Total Columns For Main Container
+$max-width: em(1162);
+
+//OMEGA RESET
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+// Neat Breakpoints
+$large-screen: em(980);
+$medium-screen: em(768);
+$mobile-screen: em(767);
+
+// Define your breakpoints
+// $desktop: new-breakpoint(max-width $large-screen 12);
+// $tablet: new-breakpoint(max-width $medium-screen 8);
+// $mobile: new-breakpoint(max-width $mobile-screen 4);

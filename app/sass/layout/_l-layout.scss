@@ -1,0 +1,22 @@
+.l-single {
+	@include outer-container();
+	@include row();
+}
+.l-one-third {
+	@include row();
+	@include span-columns(4);
+}
+
+
+
+
+.l-box-medium {
+	@include media(min-width 320px max-width 767px, 4) {
+		@include padding(0 12px);
+	}
+    @include padding(40px 28px);
+}
+.l-content-small {
+	@include row();
+	@include padding(null 28px);
+}

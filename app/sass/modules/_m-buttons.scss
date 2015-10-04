@@ -1,0 +1,31 @@
+.m-button {
+	@include media(min-width 320px max-width 767px, 4) {
+	    @include span-columns(10 of 12);
+	    @include shift(1);
+	}
+	@include span-columns(4);
+    @include shift(4);
+    margin-bottom: 20px;
+	a {
+		padding: 7px 18px;
+		@include clearfix;
+		width: 100%;
+		background-color: $pink;
+		border: 1px solid $pink;
+		text-align: center;
+		display: block;
+		color: $white;
+		text-decoration: none;
+		font-size: 32px;
+		font-weight: bold;
+		&:hover:not(:disabled),
+		&:focus,
+		&:active {
+			background-color: $pink;
+			border: 1px solid $pink;
+		}
+		@include media(min-width 320px max-width 767px, 4) {
+	        font-size: 20px;
+	    }
+	}
+}

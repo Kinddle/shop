@@ -1,0 +1,33 @@
+
+#newsletter {
+	.newsletter {
+	    height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include background-image(url('../images/background-newsletter.jpg'));
+		.baner {
+			margin: 0;
+			float: right;
+			padding: 15px;
+			width: 186px;
+		    height: 86px;
+		    h3 {
+		    	font-size: 20px;
+		    	line-height: 20px;
+		    }
+		    h1 {
+		    	font-size: 34px;
+		    	line-height: 34px;
+		    }
+		}
+	    .m-newsletter-label {
+	    	width: 440px;
+	    	height: 65px;
+	    }
+	    p {
+	    	color: $white;
+	    	font-size: 22px;
+	    	font-weight: bold;
+	    }
+    }
+}

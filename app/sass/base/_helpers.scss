@@ -1,0 +1,67 @@
+// Backgrounds
+
+// Responsive helpers
+
+// Margin/Padding resets
+.margin-reset {
+  margin: 0 !important;
+}
+// Floats
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+// Hr
+.vertical-border {
+	@include border-style(null solid null null);
+	@include border-color(null $grey null null);
+	@include border-width(null 2px null null);
+}
+// Links
+
+//Typography
+h1 {
+  font-size: 74px;
+}
+h2 {
+  font-size: 46px;
+}
+h3 {
+  font-size: 42px;
+}
+h4 {
+  font-size: 30px;
+  font-weight: 300;
+}
+h5 {
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+p {
+	font-size: 18px;
+	margin: 0;
+  direction: rtl;
+}
+
+.hide-mobile {
+  margin-left: 10px;
+  @include media( max-width 1399px, 6) {
+    float: right;
+  }
+  @include media(min-width 320px max-width 767px, 4) {
+    display: none;
+  }
+}
+.visible-mobile {
+  display: none;
+  @include media(min-width 320px max-width 767px, 4) {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
